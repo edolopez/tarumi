@@ -58,7 +58,9 @@ The example above will post a message to the `#general` channel, but you can eas
 options = {
 	username: "usernametopost",
 	channel: "#anotherchannel",
-	hook_name: "webhookname"
+	hook_name: "webhookname",
+	icon_url: "http://a_url_to_an_icon.com/icon.png",
+	icon_emoji: "http://a_url_to_an_emoji.com/emoji.png"
 }
 ```
 That should be it for you to easily configure the bot and start sending messages.
@@ -67,7 +69,7 @@ That should be it for you to easily configure the bot and start sending messages
 
 ## Contributing
 
-1. Fork it ( http://github.com/<my-github-username>/tarumi/fork )
+1. Fork it ( http://github.com/IcaliaLabs/tarumi/fork )
 2. Create your feature branch (`git checkout -b my-new-feature`)
 3. Commit your changes (`git commit -am 'Add some feature'`)
 4. Push to the branch (`git push origin my-new-feature`)
