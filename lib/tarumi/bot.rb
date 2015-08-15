@@ -13,9 +13,8 @@ module Tarumi
     # We don't want Rails to be nasty with the parameters we send
     disable_rails_query_string_format if defined?(Rails)
 
-    def initialize(team, token, options = {})
-      self.class.base_uri("https://#{team}.slack.com")
-      self.class.default_params(token: token) #we sent this token on each request
+    def initialize(webhookurl, options = {})
+      self.class.base_uri(webhookurl)
 
       @username   = options[:username]   || "webhookbot"
       @channel    = options[:channel]    || "#general"
